@@ -1,1 +1,1 @@
-PhP works and studies of Laracast Videos from Youtube
+PhP works and studies of videos from Laracasts
