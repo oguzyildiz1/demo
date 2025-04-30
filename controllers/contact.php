@@ -1,6 +1,5 @@
 <?php
 
-
 $heading = "Contact Page";
 
-include "view/contact.view.php";
+include "views/contact.view.php";
