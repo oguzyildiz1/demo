@@ -10,7 +10,8 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path']; // slices the query string an
 $routes = [
     '/' => 'index.php',
     '/about' => 'about.php',
-    '/contact' => 'contact.php'
+    '/contact' => 'contact.php',
+    '/test' => 'test.php'
 ];
 
 // eğer route varsa array içinde
