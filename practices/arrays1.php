@@ -5,7 +5,7 @@ $trees = ["çam", "kavak", "iğde"];
 <ul>
     <?php foreach($trees as $tree)
     {
-        echo "<li>{$tree}&#8482</li>";
+        echo "<li>{$tree}&#8482</li>"; // tm symbol
     }
     ;?>
 </ul>
