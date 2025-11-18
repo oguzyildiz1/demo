@@ -1,5 +1,4 @@
 <?php
-
 // controllers
 $heading = "Home Page";
 

@@ -1,0 +1,13 @@
+1 http.conf document root değiştirildi... 
+
+2 http.conf document root backup yapildi... 
+	"C:/laragon/www/websites/demo/" oldu
+	
+PARSE_URİ RESULT = string(15) "/websites/demo/"
+
+about.php
+	string(36) "/websites/demo/controllers/index.php"
+
+use php -S localhost:8888
+	! --- do not use apache server it messes up the program
+		document root changess............!!!!!!!!!!!!

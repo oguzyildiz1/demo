@@ -1,24 +1,27 @@
 <?php 
 
-require "controllers/functions.php";
-
+require_once "controllers/functions.php";
 
 // echo $_SERVER['REQUEST_URI'];
-$uri = parse_url($_SERVER['REQUEST_URI'])['path']; // slices the query string and path string
+// define(PHP_URL_PATH, 1);
 
+$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); // slices the query string and path string
 //creating routes
+
 $routes = [
     '/' => 'index.php',
-    '/about' => 'about.php',
-    '/contact' => 'contact.php',
-    '/test' => 'test.php'
+    '/about' => 'about.php',  
 ];
+
+// test -----
+// ---- open and log the ouput to text file
+
 
 // eğer route varsa array içinde
 if (array_key_exists($uri, $routes))
 {
     // sayfaları çağır
-    require "controllers/" . $routes[$uri];
+    require 'controllers/'. $routes[$uri]; 
 } else {
     // sayfa yoksa
     http_response_code(404); // set the status of response code

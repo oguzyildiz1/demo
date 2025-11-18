@@ -1,5 +1,5 @@
 <?php
-
+echo "about page";
 
 $heading = "About Page";
 
